@@ -58,7 +58,7 @@
             .then((response) => response.json())
             .then((result) => {
                 console.log(result);
-                win.document.body.innerHTML = `<pre>result.choices[0].message.content</pre>`;
+                win.document.body.innerHTML = `<pre>${result.choices[0].message.content}</pre>`;
             })
             .catch((error) => {
                 console.error(error);
