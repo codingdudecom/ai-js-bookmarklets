@@ -7,7 +7,11 @@
 
     function go() {
         var turndownService = new TurndownService();
-        var markdown = turndownService.turndown(document.getElementsByTagName("article")[0]);
+        var contentElement = document.getElementsByTagName("article")[0];
+        if (!contentElement){
+        	contentElement = document.body;
+        }
+        var markdown = turndownService.turndown();
 
         const API_KEY = localStorage.getItem("GPT_API_KEY");
         const BASE_URL = localStorage.getItem("GPT_API_BASE");
