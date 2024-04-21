@@ -11,7 +11,7 @@
         if (!contentElement){
         	contentElement = document.body;
         }
-        var markdown = turndownService.turndown();
+        var markdown = turndownService.turndown(contentElement);
 
         const API_KEY = localStorage.getItem("GPT_API_KEY");
         const BASE_URL = localStorage.getItem("GPT_API_BASE");
