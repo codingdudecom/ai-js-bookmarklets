@@ -1,7 +1,7 @@
 (function() {
     var script = document.createElement("script");
     script.onload = () => go();
-    script.src = "https://unpkg.com/turndown/dist/turndown.js";
+    script.src = "https://unpkg.com/turndown@7.1.3/dist/turndown.js";
     document.head.appendChild(script);
 
 
