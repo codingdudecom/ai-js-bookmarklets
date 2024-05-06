@@ -82,3 +82,5 @@ fetch(BASE_URL, requestOptions)
   });
 
 }
+
+start();
