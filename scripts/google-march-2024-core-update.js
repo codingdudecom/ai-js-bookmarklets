@@ -15,7 +15,7 @@ const BASE_URL = localStorage.getItem("GPT_API_BASE");
 if (!API_KEY){
 	// alert("GPT_API_KEY not set in localStorage");
 	localStorage.setItem("GPT_API_KEY",prompt("Input GPT_API_KEY"));
-	localStorage.setItem("GPT_API_KEY",prompt("Input GPT_API_BASE"));
+	localStorage.setItem("GPT_API_BASE",prompt("Input GPT_API_BASE"));
 	throw "GPT_API_KEY not set in localStorage";
 }
 
