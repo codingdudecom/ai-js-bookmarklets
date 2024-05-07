@@ -10,8 +10,8 @@ function doTask(){
 var turndownService = new TurndownService();
 var markdown = turndownService.turndown(document.getElementsByTagName("article")[0]);
 
-const API_KEY = localStorage.getItem("GPT_API_KEY");
-const BASE_URL = localStorage.getItem("GPT_API_BASE");
+const API_KEY = sharedStorage.getItem("GPT_API_KEY");
+const BASE_URL = sharedStorage.getItem("GPT_API_BASE");
 if (!API_KEY){
 	alert("GPT_API_KEY not set in localStorage");
 	throw "GPT_API_KEY not set in localStorage";
